@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Food Coat</title>
+</head>
+
+<link rel="stylesheet" href="style.css">
+<style>
+    body{
+        margin:0px ;
+        padding: 0px;
+        background-image:url('food 8.png');
+        background-repeat: no-repeat;
+        /*background-attachment: fixed;*/
+        background-size: cover;
+
+    }
+    .left{/*{border: 2px solid yellow;*/
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 10px;
+       /* box-shadow: 10px 10px 8px #888888;*/
+       /* box-shadow: 10px 10px 5px 12px rgb(36, 37, 37); */
+
+        border-radius: 8px;
+    }
+    .left img{
+        width: 80px;
+        filter:invert(100%);
+        
+    }
+
+    
+    .mid{
+        /*border: 2px solid red;*/
+        display:block;
+        width: 33%;
+        margin: 15px auto;
+        box-shadow: 5px 5px 8px #888888;
+        border-radius: 8px;
+
+    }
+    .right{
+          /*border: 2px solid yellow;*/
+          display: inline-block;
+          position:absolute;
+          right: 34px;
+          top: 25px;
+          
+          
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        
+        font-size: 20px;
+        
+    }
+    .navbar li a{
+        color:white;
+        text-decoration: none;
+        padding: 3px 10px;
+    }
+    .navbar li a:hover{
+        color:black;
+        
+    }
+    .Btn{
+        margin-top: 0px 9px;
+        background-color: black;
+        color: white;
+        padding:4px 14px;
+        font-size: 15px;
+        border: 2px solid grey;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .Btn:hover{background-color: rgb(92, 88, 88);
+
+    }
+.Romi{
+       /* border: 2px solid white;*/
+        margin:3px 10px;
+        padding: 45px;
+        width: 33%;
+        border-radius: 28px;
+        color: white;
+        height: 500px;
+    }
+    .form-group input{
+        text-align: left;
+        display: block;
+        height: 30px;
+        width: 400px;
+        padding: 2px;
+        border: 2px solid black;
+        margin: 28px 0px;
+        font-size: 20px;
+        border-radius: 8px;
+    }
+    .Romi h1{
+        text-align: center;
+    }
+    .Romi button{
+        display: block;
+        width: 23%;
+        margin: auto;
+        
+    }.form-group label{
+        font-size: larger;
+        margin: 60px 0px; 
+        padding: 40px 0px;
+        
+    }
+    .s{
+        font-size: 20px;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+           <img src="food 5.png" alt="">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="Btn">Call us now</button>
+            <button class="Btn">Email us</button>
+        </div>
+    </header>
+    <div class="Romi">
+        <h1>Customer feedback</h1>
+        <form action="noaction-php">
+            <div class="form-group">
+                <label for="Name">Your Name:</label>
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="Email">Your Email:</label>
+                <input type="Email" name="" placeholder="Enter your Email">
+            </div>
+            <div class="form-group">
+                <label for="number">Your Phone Number:</label>
+                <input type="number" name="" placeholder=" Enter Phone number">
+            </div>
+            <div class="form-group">
+                <!--input type="radio" name="choice radio" yes-->
+            </div>
+            <div class="s">
+                <label>
+                    <label for="food">Do You like our food?</label><br><br>
+                    
+                    <input type="radio" name="choice-radio">
+                    Yes
+                  </label>
+                  <label>
+                    <input type="radio" name="choice-radio">
+                    No
+                  </label>
+            </div>
+
+        </form>
+        <button class="Btn">
+            <a href="th.html">Submit</a>
+        </button>
+        
+    </div>
+    
+    
+</body>
+</html>
